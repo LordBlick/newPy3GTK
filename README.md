@@ -2,7 +2,7 @@
 title: newPy3GTK
 description: Simple Python GTK3 GUI Startup
 author: LordBlick
-tags: AVR, microcontroler, avrdude, electonics
+tags: Python, Gtk3
 created: Some time ago…
 modified: 2021.11.17
 
