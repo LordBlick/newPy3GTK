@@ -1,0 +1,59 @@
+@define-color base_color #201810;
+@define-color bg_color #1c1a18;
+/* @define-color bg_color #001a00; */
+@define-color text_color #ffffff;
+@define-color fg_color #ffffff;
+@define-color menu_controls_color #ffffff;
+@define-color less_dark_color #383430;
+@define-color lighter_color #e0d0C0;
+@define-color eco_color #385830;
+
+window {
+	background-color: @bg_color;
+}
+
+label {
+	color: @text_color;
+}
+
+button, .button, .linked {
+	background-color: @bg_color;
+	background-image: image(@bg_color);
+	color: @text_color;
+	border-color: @eco_color;
+	text-shadow: none;
+}
+
+.separator {
+	color: @fg_color;
+/* 	border-color: @text_color; */
+}
+
+text,
+entry,
+treeview,
+spinbutton entry {
+	background-image: image(@base_color);
+	color: @text_color;
+	caret-color:  @text_color;
+}
+
+/* combobox cellview, */
+combobox,
+combobox menu{
+	padding: 0;
+	color: @fg_color;
+	background-color: @bg_color;
+}
+
+combobox menu:hover,
+button:hover {
+	background-image: image(alpha(shade(@less_dark_color, 1.1), 1.0));
+	color: @fg_color;
+}
+
+/*keep active .view color off of treeview cells using an image */
+.view.cell:selected,
+.view.cell:active{
+	background-color:transparent;
+}
