@@ -153,6 +153,7 @@
     <property name="action">select-folder</property>
     <property name="local-only">False</property>
     <property name="preview-widget-active">False</property>
+    <property name="show-hidden">True</property>
     <property name="use-preview-label">False</property>
     <accel-groups>
       <group name="accGroup"/>
